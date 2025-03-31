@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Margarita",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "albahaca"],
+    "sold_out": false,
+    "unit_price": 12
+  },
+  {
+    "name": "Caprichosa",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "jamón", "champiñones"],
+    "sold_out": true,
+    "unit_price": null
+  },
+  {
+    "name": "Romana",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "prosciutto"],
+    "sold_out": false,
+    "unit_price": 16
+  },
+  {
+    "name": "Prosciutto e Rucola",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "prosciutto", "rúcula"],
+    "sold_out": false,
+    "unit_price": 16
+  },
+  {
+    "name": "Diavola",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "salami picante", "chili"],
+    "sold_out": false,
+    "unit_price": 16
+  },
+  {
+    "name": "Vegetale",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "pimentón", "cebolla"],
+    "sold_out": false,
+    "unit_price": 13
+  },
+  {
+    "name": "Napoli",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "albahaca"],
+    "sold_out": false,
+    "unit_price": 16
+  },
+  {
+    "name": "Siciliana",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "anchoas", "aceitunas"],
+    "sold_out": true,
+    "unit_price": null
+  },
+  {
+    "name": "Pepperoni",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "pepperoni"],
+    "sold_out": false,
+    "unit_price": 14
+  },
+  {
+    "name": "Hawaiana",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "piña", "jamón"],
+    "sold_out": false,
+    "unit_price": 15
+  },
+  {
+    "name": "Espinacas y champiñones",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "espinacas", "champiñones"],
+    "sold_out": false,
+    "unit_price": 15
+  },
+  {
+    "name": "Mediterránea",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "tomate seco", "aceitunas"],
+    "sold_out": false,
+    "unit_price": 16
+  },
+  {
+    "name": "Griega",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "espinacas", "feta", "aceitunas"],
+    "sold_out": true,
+    "unit_price": null
+  },
+  {
+    "name": "Abruza",
+    "image_url": null,
+    "ingredients": ["Tomate", "mozzarella", "prosciutto", "rúcula"],
+    "sold_out": false,
+    "unit_price": 16
+  },
+  {
+    "name": "Pollo al pesto",
+    "image_url": null,
+    "ingredients": ["Pesto", "mozzarella", "pollo", "tomate seco", "espinacas"],
+    "sold_out": false,
+    "unit_price": 16
+  },
+  {
+    "name": "Parmigiana de berenjena",
+    "image_url": null,
+    "ingredients": ["Salsa marinera", "mozzarella", "berenjena", "queso parmesano"],
+    "sold_out": false,
+    "unit_price": 15
+  },
+  {
+    "name": "Vegetariana tostada",
+    "image_url": null,
+    "ingredients": ["Salsa marinera", "mozzarella", "calabacín", "berenjena"],
+    "sold_out": false,
+    "unit_price": 15
+  },
+  {
+    "name": "Tofu y champiñones",
+    "image_url": null,
+    "ingredients": ["Salsa marinera", "mozzarella", "tofu", "champiñones"],
+    "sold_out": false,
+    "unit_price": 15
+  }
+]
