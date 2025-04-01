@@ -7,6 +7,14 @@ import cors from "cors";
 import mongoose from "mongoose";
 import routes from "./routes";
 
+/**
+ * @description API para manipular pedidos y pizzas
+ * @author Alvaro Montáns
+ * @version 1.0.0
+ * @license MIT
+ * @see https://github.com/alvaromontans/api-pizza
+ */
+
 const app = express();
 app.use(express.json());
 

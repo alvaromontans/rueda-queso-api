@@ -1,6 +1,14 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose, { Document, Model, Schema } from "mongoose";
 
-const PizzaSchema: Schema = new Schema({
+export interface PizzaDocument extends Document {
+    image_url: string;
+    name: string;
+    ingredients: string[];
+    sold_out: boolean;
+    unit_price: number;
+}
+
+const PizzaSchema = new Schema<PizzaDocument>({
     image_url: { type: String, required: true },
     name: { type: String, required: true },
     ingredients: { type: [String], required: true },
@@ -8,5 +16,10 @@ const PizzaSchema: Schema = new Schema({
     unit_price: { type: Number, required: true },
 });
 
-export const PizzaModel = mongoose.model("pizza", PizzaSchema);
-export const getPizzas = () => PizzaModel.find();
+export const PizzaModel = mongoose.model<PizzaDocument>("pizza", PizzaSchema);
+
+/**
+ * Obtiene todas las pizzas
+ * @returns {Promise<PizzaDocument[]>}
+ */
+export const getPizzas = (): Promise<PizzaDocument[]> => PizzaModel.find();
