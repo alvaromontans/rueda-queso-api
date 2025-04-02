@@ -35,7 +35,7 @@ app.use((0, cookie_parser_1.default)());
 app.use(body_parser_1.default.json());
 const server = http_1.default.createServer(app);
 server.listen(3000, () => {
-    console.log("Servidor alojado en http://localhost:8080/");
+    console.log("Servidor alojado en http://localhost:3000/");
 });
 mongoose_1.default.Promise = Promise;
 mongoose_1.default.connect(mongoUrl);

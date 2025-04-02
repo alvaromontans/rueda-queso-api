@@ -36,7 +36,7 @@ app.use(bodyParser.json());
 const server = http.createServer(app);
 
 server.listen(3000, () => {
-    console.log("Servidor alojado en http://localhost:8080/");
+    console.log("Servidor alojado en http://localhost:3000/");
 });
 
 
