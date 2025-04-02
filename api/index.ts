@@ -18,6 +18,9 @@ import { config } from 'dotenv';
 
 config();
 const mongoUrl = process.env.MONGO_URL;
+if (!mongoUrl) {
+    throw new Error('MONGO_URL no está definida');
+}
 const app = express();
 app.use(express.json());
 
