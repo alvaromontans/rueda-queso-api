@@ -36,3 +36,4 @@ npm-debug.log*
 
 # Ignorar archivos misceláneos
 .prettierignore
+.vercel
