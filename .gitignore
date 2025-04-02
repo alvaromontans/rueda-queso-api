@@ -1,0 +1,45 @@
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de entornos de desarrollo integrado
+.vscode/
+.idea/
+
+# Ignorar archivos de gestores de paquetes
+node_modules/
+package-lock.json
+
+# Ignorar archivos de compilación y registros
+build/
+logs/
+
+# Ignorar archivos de TypeScript y JavaScript
+*.tsbuildinfo
+*.js.map
+
+# Ignorar archivos de MongoDB
+.mongorc.js
+
+# Ignorar archivo de variables de entorno
+.env
+
+# Ignorar archivo de configuración de nodemon
+.nodemon.json
+
+# Ignorar archivos de npm
+npm-debug.log*
+
+# Ignorar archivos de yarn
+.yarn-integrity
+.yarn-metadata.json
+.yarn-debug.log*
+
+# Ignorar archivos del compilador de TypeScript
+tsconfig.tsbuildinfo
+
+# Ignorar archivos de respaldo del editor
+.*.swp
+
+# Ignorar archivos misceláneos
+.prettierignore

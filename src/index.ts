@@ -6,6 +6,7 @@ import compression from "compression";
 import cors from "cors";
 import mongoose from "mongoose";
 import routes from "./routes";
+import { config } from 'dotenv';
 
 /**
  * @description API para manipular pedidos y pizzas
@@ -13,8 +14,10 @@ import routes from "./routes";
  * @version 1.0.0
  * @license MIT
  * @see https://github.com/alvaromontans/api-pizza
- */
+*/
 
+config();
+const mongoUrl = process.env.MONGO_URL;
 const app = express();
 app.use(express.json());
 
@@ -33,8 +36,7 @@ server.listen(8080, () => {
     console.log("Servidor alojado en http://localhost:8080/");
 });
 
-const MONGO_URL = "mongodb+srv://alvaro:RUvEkr2AWcWnggUa@clusterpizza.onrbwue.mongodb.net/?retryWrites=true&w=majority&appName=ClusterPizza";
 
 mongoose.Promise = Promise;
-mongoose.connect(MONGO_URL);
+mongoose.connect(mongoUrl);
 mongoose.connection.on("error", (error: Error) => console.log(error));

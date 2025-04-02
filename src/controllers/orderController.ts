@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { createOrder, deleteOrderByOrderId, updateByOrderId, getByOrderId, getOrders } from "db/orders";
+import { createOrder, deleteOrderByOrderId, updateByOrderId, getByOrderId, getOrders } from "../db/orders";
 
 /**
  * Crear un nuevo pedido
