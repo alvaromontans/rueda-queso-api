@@ -50,7 +50,7 @@ export const OrderModel = mongoose.model<OrderDocument>("order", OrderSchema);
  * Obtener todos los pedidos
  * @returns {Promise<OrderDocument[]>}
  */
-export const getOrders = (): Promise<OrderDocument[]> => OrderModel.find().select('-_id order_id address customer phone position priority estimated_delivery order_price priority_price status cart.name cart.quantity cart.unit_price cart.total_price');
+export const getOrders = (): Promise<OrderDocument[]> => OrderModel.find();
 
 /**
  * Crear un nuevo pedido
@@ -65,7 +65,7 @@ export const createOrder = (values: Record<string, any>): Promise<OrderDocument>
  * @param {string} order_id - Order ID
  * @returns {Promise<OrderDocument | null>}
  */
-export const getByOrderId = (order_id: string): Promise<OrderDocument | null> => OrderModel.findOne({ order_id }).select('-_id order_id address customer phone position priority estimated_delivery order_price priority_price status cart.name cart.quantity cart.unit_price cart.total_price');
+export const getByOrderId = (order_id: string): Promise<OrderDocument | null> => OrderModel.findOne({ order_id });
 
 /**
  * Actualizar un pedido por id

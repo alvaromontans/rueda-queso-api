@@ -47,6 +47,6 @@ exports.PizzaModel = mongoose_1.default.model("pizza", PizzaSchema);
  * Obtiene todas las pizzas
  * @returns {Promise<PizzaDocument[]>}
  */
-const getPizzas = () => exports.PizzaModel.find().select('-_id');
+const getPizzas = () => exports.PizzaModel.find();
 exports.getPizzas = getPizzas;
 //# sourceMappingURL=pizzas.js.map
