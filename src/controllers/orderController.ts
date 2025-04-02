@@ -8,7 +8,6 @@ import { createOrder, deleteOrderByOrderId, updateByOrderId, getByOrderId, getOr
  */
 export const createNewOrder = async (req: Request, res: Response): Promise<void> => {
     try {
-        console.log(req.body);
         const order = await createOrder(req.body);
         res.status(201).json(order);
     } catch (error) {
