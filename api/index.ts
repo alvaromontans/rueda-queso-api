@@ -17,7 +17,7 @@ import { config } from 'dotenv';
 */
 
 config();
-const mongoUrl = process.env.MONGO_URL;
+const mongoUrl = process.env.MONGODB_URI;
 if (!mongoUrl) {
     throw new Error('MONGO_URL no está definida');
 }
