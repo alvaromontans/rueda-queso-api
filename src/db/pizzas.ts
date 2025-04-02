@@ -22,4 +22,4 @@ export const PizzaModel = mongoose.model<PizzaDocument>("pizza", PizzaSchema);
  * Obtiene todas las pizzas
  * @returns {Promise<PizzaDocument[]>}
  */
-export const getPizzas = (): Promise<PizzaDocument[]> => PizzaModel.find();
+export const getPizzas = (): Promise<PizzaDocument[]> => PizzaModel.find().select('-_id');
