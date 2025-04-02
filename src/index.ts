@@ -43,3 +43,5 @@ server.listen(3000, () => {
 mongoose.Promise = Promise;
 mongoose.connect(mongoUrl);
 mongoose.connection.on("error", (error: Error) => console.log(error));
+
+export default app;
