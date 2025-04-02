@@ -50,7 +50,7 @@ export const OrderModel = mongoose.model<OrderDocument>("order", OrderSchema);
  * Obtener todos los pedidos
  * @returns {Promise<OrderDocument[]>}
  */
-export const getOrders = (): Promise<OrderDocument[]> => OrderModel.find().select('-_id');
+export const getOrders = (): Promise<OrderDocument[]> => OrderModel.find();
 
 /**
  * Crear un nuevo pedido
