@@ -8,7 +8,6 @@ Thumbs.db
 
 # Ignorar archivos de gestores de paquetes
 node_modules/
-package-lock.json
 
 # Ignorar archivos de compilación y registros
 build/
@@ -24,9 +23,6 @@ logs/
 # Ignorar archivo de variables de entorno
 .env
 
-# Ignorar archivo de configuración de nodemon
-.nodemon.json
-
 # Ignorar archivos de npm
 npm-debug.log*
 
@@ -34,9 +30,6 @@ npm-debug.log*
 .yarn-integrity
 .yarn-metadata.json
 .yarn-debug.log*
-
-# Ignorar archivos del compilador de TypeScript
-tsconfig.tsbuildinfo
 
 # Ignorar archivos de respaldo del editor
 .*.swp
